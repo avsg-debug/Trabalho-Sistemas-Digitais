@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogo da Velha com Arduino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <h1>Jogo da Velha com Arduino</h1>
+      <p class="subtitulo">Projeto da disciplina de Sistemas Digitais.</p>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#descricao">Descrição</a></li>
+          <li><a href="#palavras">Palavras-chave</a></li>
+          <li><a href="#autores">Autores</a></li>
+          <li><a href="#componentes">Componentes</a></li>
+          <li><a href="#apps">Aplicativos</a></li>
+          <li><a href="#passos">Passo a passo</a></li>
+          <li><a href="#codigo">Código</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#problemas">Lições</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="secao">
+      <div class="container">
+        <h2>Início</h2>
+        <p>
+          Este site resume o projeto <strong>Jogo da Velha com Arduino</strong>, que utiliza LEDs e botões para criar
+          um tabuleiro físico, aplicando conceitos de lógica digital e programação embarcada.
+        </p>
+      </div>
+    </section>
+
+    <section id="descricao" class="secao bg-claro">
+      <div class="container">
+        <h2>Descrição do Projeto</h2>
+
+        <div class="bloco">
+          <p><strong>Motivação:</strong> aprender eletrônica digital e lógica computacional de forma prática e interativa.</p>
+          <p><strong>Objetivo:</strong> construir um tabuleiro de jogo da velha usando LEDs para as jogadas e botões como entrada dos dois jogadores.</p>
+          <p><strong>Como funciona:</strong></p>
+          <ul>
+            <li>O jogador aperta um botão;</li>
+            <li>O Arduino identifica a posição;</li>
+            <li>O LED correspondente acende;</li>
+            <li>O sistema alterna entre jogadores;</li>
+            <li>O código verifica vitória ou empate.</li>
+          </ul>
+
+          <div class="box-imagem">
+            <p><strong>Foto do protótipo:</strong></p>
+            <img src="img/Jogo da velha.jpeg"
+                 alt="Imagem do projeto Jogo da Velha com Arduino"
+                 style="max-width:100%; border-radius:8px; margin-top:8px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="palavras" class="secao">
+      <div class="container">
+        <h2>Palavras-chave</h2>
+        <ul class="tags">
+          <li>Arduino</li>
+          <li>Lógica Digital</li>
+          <li>LEDs</li>
+          <li>Sistema Interativo</li>
+          <li>Jogo da Velha</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="autores" class="secao bg-claro">
+      <div class="container">
+        <h2>Autores</h2>
+        <p>Equipe responsável pelo projeto.</p>
+
+        <div class="grade-autores">
+
+          <div class="autor-card">
+            <h3>Arthur Victor</h3>
+            <p>Estudante de Sistemas Digitais.</p>
+            <img src="img/Arthur Victor.jpeg"
+                 alt="Foto de Arthur Victor"
+                 style="max-width:100%; border-radius:8px;" />
+          </div>
+
+          <div class="autor-card">
+            <h3>Arthur Schmitz</h3>
+            <p>Estudante de Sistemas Digitais.</p>
+            <img src="img/Arthur Schmitz.jpeg"
+                 alt="Foto de Arthur Schmitz"
+                 style="max-width:100%; border-radius:8px;" />
+          </div>
+
+          <div class="autor-card">
+            <h3>Christopher Mark</h3>
+            <p>Estudante de Sistemas Digitais.</p>
+            <img src="img/Chris.jpeg"
+                 alt="Foto de Christopher Mark"
+                 style="max-width:100%; border-radius:8px;" />
+          </div>
+
+          <div class="autor-card">
+            <h3>Heitor Torres</h3>
+            <p>Estudante de Sistemas Digitais.</p>
+            <img src="img/Heitor Torres.jfif"
+                 alt="Foto de Heitor Torres"
+                 style="max-width:100%; border-radius:8px;" />
+          </div>
+
+          <div class="autor-card">
+            <h3>João Vitor Lopes</h3>
+            <p>Estudante de Sistemas Digitais.</p>
+            <img src="img/João Vitor.jpeg"
+                 alt="Foto de João Vitor Lopes"
+                 style="max-width:100%; border-radius:8px;" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="componentes" class="secao">
+      <div class="container">
+        <h2>Componentes</h2>
+        <ul class="lista-componentes">
+          <li>1 Arduino Uno R3</li>
+          <li>3 LEDs vermelhos</li>
+          <li>3 LEDs verdes</li>
+          <li>3 LEDs amarelos</li>
+          <li>1 resistor (2.7kΩ)</li>
+          <li>1 potenciômetro de 250 kΩ</li>
+          <li>1 botão</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="apps" class="secao bg-claro">
+      <div class="container">
+        <h2>Aplicativos e plataformas</h2>
+        <ul>
+          <li>Arduino IDE</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>ChatGPT</li>
+          <li>YouTube</li>
+          <li>Google Drive</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="passos" class="secao">
+      <div class="container">
+        <h2>Passo a passo</h2>
+        <ol>
+          <li><strong>Montar LEDs:</strong> matriz 3×3 com resistores ligados aos pinos digitais.</li>
+          <li><strong>Conectar botões:</strong> usar <code>INPUT_PULLUP</code>.</li>
+          <li><strong>Conectar ao Arduino:</strong> organizar a protoboard.</li>
+          <li><strong>Testar componentes:</strong> LEDs e botões.</li>
+          <li><strong>Carregar o código final.</strong></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="codigo" class="secao bg-claro">
+      <div class="container">
+        <h2>Código (trecho principal)</h2>
+
+<pre class="codigo"><code>int potenciometro = 0;
+int ledAceso = 0;
+int inicio = 1;
+int tabuleiro[9];
+int jogador = 1;
+int i;
+int botao = 11;
+int pos = 0;
+
+void setup() {
+  for (i = 2; i < 11; i++) pinMode(i, OUTPUT);
+  pinMode(botao, INPUT_PULLUP);
+
+  for (i = 0; i < 9; i++) tabuleiro[i] = 0;
+}
+
+void desenhaTabuleiro() {
+  for (i = 0; i < 9; i++) {
+    int led = i + 2;
+
+    if (tabuleiro[i] == 0) digitalWrite(led, LOW);
+    else if (tabuleiro[i] == 1) digitalWrite(led, (millis() / 300) % 2);
+    else if (tabuleiro[i] == 2) digitalWrite(led, HIGH);
+  }
+}
+
+int verificaVitoria() {
+  int v[8][3] = {
+    {0,1,2},{3,4,5},{6,7,8},
+    {0,3,6},{1,4,7},{2,5,8},
+    {0,4,8},{2,4,6}
+  };
+
+  for (int k = 0; k < 8; k++) {
+    int a = v[k][0], b = v[k][1], c = v[k][2];
+
+    if (tabuleiro[a] != 0 && tabuleiro[a] == tabuleiro[b] && tabuleiro[b] == tabuleiro[c])
+      return tabuleiro[a];
+  }
+  return 0;
+}
+
+void loop() {
+  potenciometro = analogRead(A5);
+  pos = map(potenciometro, 0, 1023, 0, 8);
+  ledAceso = pos + 2;
+
+  desenhaTabuleiro();
+
+  if (tabuleiro[pos] == 0)
+    digitalWrite(ledAceso, (millis() / 100) % 2);
+
+  if (digitalRead(botao) == LOW && tabuleiro[pos] == 0) {
+    delay(250);
+    tabuleiro[pos] = jogador;
+    jogador = (jogador == 1 ? 2 : 1);
+  }
+
+  int vencedor = verificaVitoria();
+  if (vencedor != 0) {
+    for (int n = 0; n < 6; n++) {
+      for (int i = 2; i < 11; i++) digitalWrite(i, HIGH);
+      delay(200);
+      for (int i = 2; i < 11; i++) digitalWrite(i, LOW);
+      delay(200);
+    }
+
+    for (int i = 0; i < 9; i++) tabuleiro[i] = 0;
+    jogador = 1;
+  }
+}
+</code></pre>
+
+      </div>
+    </section>
+
+    <section id="download" class="secao">
+      <div class="container">
+        <h2>Download</h2>
+        <p>Baixe todo o projeto (código, imagens e esquemas) no GitHub.</p>
+
+        <a href="https://github.com/avsg-debug/Trabalho-Sistemas-Digitais/tree/main"
+           class="botao" target="_blank">
+          Acessar Projeto (.zip disponível no GitHub)
+        </a>
+      </div>
+    </section>
+
+    <section id="video" class="secao bg-claro">
+      <div class="container">
+        <h2>Vídeo</h2>
+        <p>Veja o projeto funcionando:</p>
+
+        <div class="video-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6hE7KyF9vJQ"
+            title="Vídeo do projeto Jogo da Velha com Arduino"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="problemas" class="secao">
+      <div class="container">
+        <h2>Problemas e lições</h2>
+
+        <h3>Problemas encontrados</h3>
+        <ul>
+          <li>LEDs mal conectados;</li>
+          <li>Ruído nos botões;</li>
+          <li>Erros na alternância das jogadas.</li>
+        </ul>
+
+        <h3>Lições aprendidas</h3>
+        <ul>
+          <li>Testar componentes antes da montagem;</li>
+          <li>Organizar melhor a protoboard;</li>
+          <li>Planejar a lógica antes de programar;</li>
+          <li>Trabalho em equipe e documentação.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer class="rodape">
+    <div class="container">
+      &copy; Projeto Jogo da Velha com Arduino – Sistemas Digitais
+    </div>
+  </footer>
+
+</body>
+</html>
